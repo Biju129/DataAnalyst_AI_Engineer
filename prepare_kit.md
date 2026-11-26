@@ -200,3 +200,97 @@ The use of HAVING total_revenue is supported in PostgreSQL and MySQL.
 
         =SUMIF(B2:B6,"HR",C2:C6)
 
+## Staistics and Business Thinking
+
+>Topics
+1. Mean vs Median
+2. Outliers
+3. Correlation
+4. Business KPIs
+
+Mean (**AVERAGE**) -> Sum (All Values) / Total Number of Values.
+**Median** -> Middle Most Value
+
+**What should a Data Analyst conclude?**
+
+If the mean is much higher than the median because one unusually large sale (₹10,000) pulls the average upward.
+
+### OUTLIERS
+
+An outlier is a data point that is unusually far from the rest of the values.
+
+    In our sales data:
+
+    1000, 1200, 1500, 1800, 10000
+
+Here **₹10,000** is the outlier.
+
+### CORRELATION
+
+Correlation helps us understand whether two variables move together.
+
+|Type|	Meaning|	Example|
+|----|------|------|
+|Positive correlation|	Both increase together|	Advertising spend ↑, Sales ↑|
+|Negative correlation|	One increases, the other decreases	|Price ↑, Demand ↓|
+|No correlation|	No consistent relationship	|Shoe size vs. monthly sales|
+
+_**Remember**: Correlation does not mean causation. Just because two things move together doesn't mean one caused the other._
+
+> Task Questions
+
+|Advertising Spend (₹)	| Sales (₹)|
+|----|-----|
+|1,000	|10,000|
+|2,000	|18,000|
+|3,000	|25,000|
+|4,000	|35,000|
+|5,000	|45,000|
+
+1. What type of correlation do you observe?
+
+        You observed a positive correlation: as advertising spending increases, sales also increase.
+
+
+2. Can the business conclude that increasing advertising always causes sales to increase? Why or why not?
+
+        The data shows a positive correlation between advertising expenditure and sales. However, we cannot conclude that advertising alone causes sales to increase. Other factors, such as seasonality, market demand and competition, may also influence sales. Further analysis is required to determine the actual impact of advertising.
+
+![Correlation Image](https://chatgpt.com/s/i_6b07e6b12ddc8191a03ac40bf3522e28)
+
+---
+
+### KPI Key Performance Indicator
+
+|Business goal|	KPI|
+|-----|-----|
+|Increase sales	|Total revenue|
+|Attract customers|	Customer acquisition|
+|Improve website|	Conversion rate|
+|Retain customers|	Retention rate|
+|Reduce expenses|	Cost per acquisition|
+
+> Task 
+
+An online store has the following data for one month:
+- Visitors: 10,000
+- Orders: 500
+- Revenue: ₹5,00,000
+- Advertising spend: ₹50,000
+
+1. Conversion Rate (%)      
+> $\frac{\text{Orders}}{\text{Visitors}}\times100$
+
+2. Average Order Value (AOV)        
+> $\frac{\text{Revenue}}{\text{Orders}}$
+
+3. ROAS (Return on Ad Spend)        
+> $\frac{\text{Revenue}}{\text{Advertising Spend}}$
+
+        1. Conversion Rate is 5%
+        2. AOV is 1,000
+        3. ROAS is 10
+        10× ROAS does not mean 10× profit. Revenue isn't profit — product costs, shipping, salaries and other expenses still need to be deducted.
+
+## Power BI & Data Visualization
+
