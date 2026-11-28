@@ -160,7 +160,7 @@ The use of HAVING total_revenue is supported in PostgreSQL and MySQL.
         FROM ranked_orders
         WHERE rnk = 2;
 
-## Excel and Data Cleaning
+## 2. Excel and Data Cleaning
 
 1. Missing values
 2. Duplicate records
@@ -292,5 +292,52 @@ An online store has the following data for one month:
         3. ROAS is 10
         10× ROAS does not mean 10× profit. Revenue isn't profit — product costs, shipping, salaries and other expenses still need to be deducted.
 
-## Power BI & Data Visualization
+## 4. Power BI & Data Visualization
+
+        Your manager wants to understand how revenue changes over time and identify the sales trend from January to May.
+
+        A line chart is ideal for showing trends over time. Here, the X-axis represents months and the Y-axis represents revenue.
+
+Why not the others?
+- Pie/Donut → Show proportions or composition, not trends over time.
+- Card → Displays a single KPI, such as total revenue.
+- Line chart → Shows increases, decreases and trends over time.
+
+> POWER QUERY EDITOR
+
+Power Query is the data preparation layer of Power BI. It helps you clean and reshape data before it enters your data model.
+
+Typical operations:
+- Remove duplicate rows
+- Handle missing values
+- Change data types (Text → Date, Text → Number)
+- Rename columns
+- Filter unwanted records
+- Merge or append datasets
+
+_I use Power Query Editor for ETL (Extract, Transform, Load). It helps clean, transform and structure raw data before building reports and visualizations._
+
+> DAX & Measures
+Now let's learn a very important distinction.
+
+**In Power BI, DAX (Data Analysis Expressions) is used to create calculations, measures and analytical logic.**
+
+SUMX is an iterator. It evaluates an expression for each row of a table and then sums the resulting values.
+
+> Data Storytelling
+
+A dashboard is not just a collection of charts. It should tell the manager what happened, why it matters, and what action to take.
+
+Your sales dashboard reveals:
+- Revenue increased by 30% this month.
+- Laptop sales contributed 60% of total revenue.
+- Phone sales declined by 20%.
+
+        What you did well
+        - Identified laptops as the strongest revenue contributor.
+        - Noticed phone sales declining by 20%.
+        - Suggested advertising as a possible way to recover phone sales.
+        - Recommended sustaining laptop performance while improving phones.
+
+        One refinement: Revenue contribution doesn't necessarily mean laptops are being sold in greater quantities. It could also mean their unit price is higher. Before increasing ad spend on phones, investigate why sales declined.
 
